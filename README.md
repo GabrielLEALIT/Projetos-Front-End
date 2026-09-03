@@ -50,4 +50,4 @@ Abra o arquivo index.html em qualquer navegador de sua preferência.
 
 📬 Contato / Redes
 
-LinkedIn: Seu Perfil
+LinkedIn: www.linkedin.com/in/gabriel-silva-leal
