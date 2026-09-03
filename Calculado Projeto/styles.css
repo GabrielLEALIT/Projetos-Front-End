@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(238, 219, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Corpo principal da calculadora */
+.calculator {
+  width: 320px;
+  background: linear-gradient(145deg, #f0ab28, #d0880e);
+  border-radius: 40px;
+  padding: 25px 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3),
+              inset 0 4px 6px rgba(255, 255, 255, 0.4),
+              inset 0 -4px 6px rgba(0, 0, 0, 0.2);
+  border: 4px solid #b37300;
+
+}
+
+/* Painel Solar */
+.solar-panel {
+  width: 140px;
+  height: 35px;
+  background-color: #52473b;
+  margin: 0 auto 20px auto;
+  border-radius: 6px;
+  border: 3px solid #3d342a;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 2px;
+}
+
+.solar-panel span {
+  width: 15%;
+  height: 85%;
+  background-color: #3b3227;
+  border-right: 1px solid #635647;
+}
+
+/* Visor LCD */
+.display {
+  background-color: #bde5f2;
+  border: 4px solid #8ab8c6;
+  border-radius: 8px;
+  height: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 15px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+#screen {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #2b3a42;
+  letter-spacing: 2px;
+  word-break: break-all;
+}
+
+/* Grade de Botões (Grid 4 colunas) */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 52px;
+  background-color: #fff2d6;
+  border: 2px solid #8c5b0d;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #8c5b0d, 0 5px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.1s ease;
+}
+
+button:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 #8c5b0d;
+}
+
+/* Destaque para o botão Limpar (C) */
+button.clear-btn {
+  background-color: #e76f51;
+  color: #ffffff;
+  border-color: #a83a22;
+  box-shadow: 0 4px 0 #a83a22, 0 5px 8px rgba(0, 0, 0, 0.15);
+}
+
+button.clear-btn:active {
+  box-shadow: 0 0 0 #a83a22;
+}
+
+/* Destaque para o botão Igual (=) */
+button.equals {
+  background-color: #2a9d8f;
+  color: #ffffff;
+  border-color: #1a6259;
+  box-shadow: 0 4px 0 #1a6259, 0 5px 8px rgba(0, 0, 0, 0.15);
+}
+
+button.equals:active {
+  box-shadow: 0 0 0 #1a6259;
+}

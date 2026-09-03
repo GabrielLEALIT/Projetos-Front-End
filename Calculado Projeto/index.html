@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Retro</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  
+    <div class="calculator">
+    <!-- Painel Solar Decorativo -->
+    <div class="solar-panel">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- Visor LCD -->
+    <div class="display">
+      <span id="screen">0</span>
+    </div>
+
+    <!-- Teclado de Botões -->
+    <div class="buttons">
+      <!-- Linha 1: Botão Limpar (C) em destaque + Linha de Operações/Ações -->
+      <button class="clear-btn" onclick="clearScreen()">C</button>
+      <button class="operator" onclick="appendValue('/')">÷</button>
+      <button class="operator" onclick="appendValue('*')">×</button>
+      <button class="operator" onclick="appendValue('-')">-</button>
+
+      <!-- Linha 2 -->
+      <button onclick="appendValue('7')">7</button>
+      <button onclick="appendValue('8')">8</button>
+      <button onclick="appendValue('9')">9</button>
+      <button class="operator" onclick="appendValue('+')">+</button>
+
+      <!-- Linha 3 -->
+      <button onclick="appendValue('4')">4</button>
+      <button onclick="appendValue('5')">5</button>
+      <button onclick="appendValue('6')">6</button>
+      <button class="equals" onclick="calculate()">=</button>
+
+      <!-- Linha 4 -->
+      <button onclick="appendValue('1')">1</button>
+      <button onclick="appendValue('2')">2</button>
+      <button onclick="appendValue('3')">3</button>
+      <button onclick="appendValue('0')">0</button>
+    </div>
+  </div>
+
+  <script src="./scripts.js"></script>
+</body>
+</html>
